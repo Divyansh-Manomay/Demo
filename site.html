@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+   
+  body { 
+  background: url(images.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: rgb(151,230,124);
+background: linear-gradient(156deg, rgba(151,230,124,1) 0%, rgba(145,230,137,1) 35%, rgba(130,226,215,1) 71%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+.responsivebg
+{
+  max-inline-size: 100%;
+  block-size: auto;
+ 
+  object-fit: cover;
+  object-position: top center;
+}
+</style>
+
+
+<script type = "text/javascript">
+  function displayNextImage() {
+      x = (x === images.length - 1) ? 0 : x + 1;
+      document.getElementById("img").src = images[x];
+  }
+  function changeImage() {
+      setInterval(displayNextImage, 4000);
+  }
+
+  var images = [], x = -1;
+  images[0] = "1.jpg";
+  images[1] = "2.jpg";
+  images[2] = "3.jpg";
+  images[3] = "4.jpg";
+  images[4] = "5.jpg";
+  images[5] = "6.jpg";
+  images[6] = "7.jpg";
+  images[7] = "8.jpg";
+</script>
+</head>
+
+
+
+<body onload = "changeImage()">
+
+  <!--
+    <marquee bgcolor="#eaf5fa" width="100%" direction="left" height="20px">
+    For Latest Updates : Visit lfsjamshedpur.com [Announcements]
+  </marquee>
+  -->
+
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">NAME</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="#command=getcode"
+              onclick="alert(&#39;Feature in Development.  Thanks For Your Patience. &#39;);">Tab 1</a>
+          </li>
+          <li><a href="#resources.php"
+              onclick="alert(&#39;This tab is still in development, Thanks For Your Patience.  &#39;);">Tab 2</a>
+          </li>
+        </ul>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.youtube.com/@littleflowerschooljamshedp7039/featured"><span class="fa fa-youtube-play"></span> Channel</a></li>
+          <li><a href="mailto:littleflowerjsr@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Mailbox</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <img id="img" class = "responsivebg" src="1.jpg" alt="Carousel Images"/>
+
+
+  <div class="container">
+    <center>
+    <h3>Title</h3>
+    <p>Text
+    <p>Text</p>
+    </center>
+  </div>
+
+</body>
+
+</html>
